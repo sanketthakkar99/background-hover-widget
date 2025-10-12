@@ -1,0 +1,103 @@
+.bhw-wrapper { width: 100%; }
+.bhw-widget {
+    position: relative;
+    overflow: hidden;
+    min-height: 420px;
+    border-radius: 0px;
+}
+.bhw-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+    transition: opacity .35s ease-in-out;
+    opacity: 1;
+}
+.bhw-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+.bhw-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end; /* items at bottom */
+    justify-content: center;
+    height: 100%;
+    min-height: 420px;
+}
+
+.bhw-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 420px;
+    align-items: end;
+    width: 100%;
+}
+
+.bhw-item {
+    cursor: pointer;
+    padding: 14px 18px;
+    transition: transform .18s ease, background-color .18s;
+    min-height: 420px;
+    border-right:1px solid #fff;
+    overflow: hidden;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: end;
+}
+
+.bhw-item:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.08);
+}
+
+.bhw-item-inner {
+    position: relative;
+}
+
+.bhw-item-title {
+    font-size: 30px;
+    line-height: 1.333em;
+    word-break: break-word;
+    color: #fff;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    transition: transform .3s ease;
+    transform: translateY(0);
+}
+
+.bhw-item-desc {
+    margin-top: 4px;
+    color: #fff;
+    text-align: left;
+    transition: transform .3s ease;
+}
+
+/* Hover animation for title and description */
+.bhw-item:hover .bhw-item-title {
+    transform: translateY(-40px);
+}
+
+.bhw-item:hover .bhw-item-desc {
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 767px){
+    .bhw-item
+    {
+        width: 100% !important;
+        min-height: 200px !important;
+        border-bottom: 1px solid #fff;
+    }
+}
