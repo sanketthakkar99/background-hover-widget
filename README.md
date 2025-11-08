@@ -41,4 +41,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any issues or suggestions, feel free to open an issue in the repository or contact the maintainer directly:
 
 - **Author**: Sanket Thakkar
-- **Email**: sanketthakkar99@example.com
+- **Email**: sanketthakkar96@gmail.com
